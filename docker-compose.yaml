@@ -1,0 +1,16 @@
+#visit: https://docs.docker.com/compose/compose-file/compose-file-v3/
+version: '3.9'
+services:
+  storage:
+    build: .
+    container_name: swyger_storage
+    image: swyger/storage:0.1
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - .:/home/server/swyger/storage/
+      - ./node_modules:/home/server/swyger/auth/node_modules
+    expose:
+      - "4500"
+    ports:
+      - "4500:4500"
