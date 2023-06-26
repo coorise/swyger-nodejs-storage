@@ -15,10 +15,14 @@ let user={
     password:process.env.DB_PASSWORD||'',
 }
 let mongoClient=mongo.MongoClient
-let url="mongodb://"+user.username+':'+user.password+'@'+localhost+":"+port+"/"+dbName
-mongoClient.connect(url, (err, db) => {
+let url="mongodb://"+user.username+':'+user.password+'@'+localhost+":"+port+"/"+dbName+'?authSource=admin'
+try {
+    mongoClient?.connect(url,{useNewUrlParser:true, useUnifiedTopology: true }, (err, db) => {})
+        ?.then(()=>{})
+        ?.catch(()=>{})
+}catch (e) {
 
-});
+}
 
 const baseOptions = {
   "TYPEORM_SYNC": true,

@@ -108,6 +108,8 @@ docker-compose up -d
 
 # Issues
 - some bugs still remain
+- Swagger UI v4.1.3 only, compatible with Docker Container (due to cors)
+
 # Todo
 - Removing/Reduce some unusual dependencies,functions, refactoring paths/files...
 - Making good and easy documentation with tutorials (videos, webpage...)

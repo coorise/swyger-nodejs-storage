@@ -16,5 +16,7 @@ services:
       - "host.docker.internal:host-gateway"
     ports:
       - "0.0.0.0:${PORT}:${PORT}"
+    command: npm run dev
     environment:
       - ACE_HOST=${ACE_HOST}
+

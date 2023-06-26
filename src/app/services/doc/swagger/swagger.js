@@ -35,6 +35,9 @@ const swagger = () => {
 
   const swOptions = {
     explorer: true,
+    swaggerOptions: {
+      enableCORS: false,
+    },
     customCss:
         '.swagger-ui .opblock-body pre span {color: #DCD427 !important} .swagger-ui .opblock-body pre {color: #DCD427} .swagger-ui textarea.curl {color: #DCD427} .swagger-ui .response-col_description__inner div.markdown, .swagger-ui .response-col_description__inner div.renderedMarkdown {color: #DCD427}'
   };

@@ -41,6 +41,7 @@ let io_client = socket_client.mSocket.init(appModule);
 
 
 server.listen(PORT,HOST,null, () => {
+  console.log(`Server Environment Mode:`, process.env?.NODE_ENV);
   console.log(`Server running on:`, process.env.DEFAULT_STORAGE_SERVER_URL);
   console.log(`------------Socket Api url servers---------------`);
 });

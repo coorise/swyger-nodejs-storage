@@ -10,7 +10,6 @@ import { IQueryString } from './query-string.interface';
 import { IRegistrable } from './registrable.interface';
 import { IRequest } from './request.interface';
 import { IResponse } from './response.interface';
-import { IRoute } from './route.interface';
 import { IStorage } from './storage.interface';
 import { ITokenOptions } from './token-options.interface';
 import { IUpload } from './upload.interface';
@@ -32,7 +31,6 @@ export {
   IRegistrable,
   IRequest,
   IResponse,
-  IRoute,
   IStorage,
   ITokenOptions,
   IUpload,

@@ -87,7 +87,7 @@ export class Environment {
       'TYPEORM_PWD',
       'TYPEORM_SYNC',
       'TYPEORM_TYPE',
-      'TYPEORM_USER',
+      'TYPEORM_USER'
     ]
   }
 
@@ -364,7 +364,7 @@ export class Environment {
           cli: (db['CLI']) ? db['CLI'] : {
             "migrationsDir": `${this.base}/api/migrations`
           },
-          // authSource: 'admin',
+          authSource: db['AUTH_SOURCE'] || 'admin',
           useUnifiedTopology: true,
           useNewUrlParser: true,
         })
