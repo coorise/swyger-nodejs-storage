@@ -9,9 +9,9 @@ services:
       - mongodb
       - base
       - auth
-    volumes:
-      - ./:/home/server/swyger/storage
-      - ./node_modules:/home/server/swyger/storage/node_modules
+    #volumes:
+      #- ./:/home/server/swyger/storage
+      #- ./node_modules:/home/server/swyger/storage/node_modules
     extra_hosts:
       - "host.docker.internal:host-gateway"
     ports:

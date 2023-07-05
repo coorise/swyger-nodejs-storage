@@ -4,7 +4,9 @@ services:
   storage:
     container_name: swyger-storage
     image: swyger/nodejs-storage:0.1.0
-    build: ./storage
+    build: #In case you did not publish on docker hub
+      context: ./
+      dockerfile: Dockerfile-dev
     env_file: .env
     depends_on:
       - mongodb
