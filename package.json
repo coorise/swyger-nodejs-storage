@@ -28,7 +28,7 @@
     "async-utility": "^1.4.1",
     "aws-sdk": "^2.1333.0",
     "axios": "^0.27.2",
-    "bcrypt": "5.0.0",
+    "bcryptjs": "2.4.3",
     "body-parser": "^1.20.0",
     "buffer-chunks": "^0.1.1",
     "busboy": "^1.6.0",
@@ -41,7 +41,7 @@
     "discord-api-types": "^0.37.35",
     "dotenv": "^16.0.1",
     "dotenv-expand": "^8.0.3",
-    "express": "^4.18.1",
+    "express": "4.18.1",
     "express-easy-zip": "^1.1.5",
     "fs-extra": "^11.1.0",
     "fs-move": "^4.0.1",
@@ -70,7 +70,7 @@
     "swagger-jsdoc": "^3.2.9",
     "swagger-ui-express": "4.1.3",
     "ts-mixer": "^6.0.1",
-    "typeorm": "^0.2.45",
+    "typeorm": "0.2.45",
     "util": "^0.11.1",
     "uuid": "^8.3.2",
     "winston": "^3.7.2",
@@ -91,7 +91,7 @@
     "supertest": "^4.0.2",
     "ts-node": "^10.8.0",
     "tsconfig-paths": "^3.12.0",
-    "typescript": "^4.6.4",
+    "typescript": "4.6.4",
     "typescript-eslint": "0.0.1-alpha.0"
   }
 }

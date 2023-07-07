@@ -8,7 +8,7 @@ import fs from "fs";
 dataDriver.default=Object.assign(
     dataDriver.default,
     {path:'/'+Base+'/config/database/typeorm/data.drive-manager.js'}
-    )
+)
 let getFiles=(data=[
   Base+'/app/rest/core/**/connexions/typeorm/*.connexion.json',
   Base+'/app/rest/api/**/connexions/typeorm/*.connexion.json',
@@ -23,8 +23,8 @@ const files=getFiles()
 let i=0
 if(files.length>0)
 {
-  files.map(async (file:string)=>{
-    let schema:any
+  files.map(async (file)=>{
+    let schema
     try {
       schema=fs.readFileSync(file,{encoding:'utf8', flag:'r'})
       if(schema){
@@ -47,7 +47,7 @@ if(files.length>0)
 //console.log('get connexion keys ', Object.keys(dataDriver))
 
 let validateDriveModule = ()=> {
-  let errors:any=[]
+  let errors=[]
   let keys = Object.keys(dataDriver)
   keys?.map((key, i) => {
     // @ts-ignore
@@ -59,9 +59,10 @@ let validateDriveModule = ()=> {
     }
     if(model?.read){
       const arrayRead=model.read
-      arrayRead?.map((read:any,i:number)=>{
+      arrayRead?.map((read,i)=>{
         if(!read.type){
 
+          // @ts-ignore
           error.read.push({
             // @ts-ignore
             position:`[(${i})] of your array in read[]`,
@@ -70,6 +71,7 @@ let validateDriveModule = ()=> {
           })
         }
         if(!read.name){
+          // @ts-ignore
           error.read.push({
             // @ts-ignore
             position:`[(${i})] of your array in read[]`,
@@ -82,8 +84,9 @@ let validateDriveModule = ()=> {
     }
     if(model?.write){
       const arrayWrite=model.write
-      arrayWrite?.map((write:any)=>{
+      arrayWrite?.map((write)=>{
         if(!write.type){
+          // @ts-ignore
           error.write.push({
             // @ts-ignore
             position:`[(${i})] of your array in write[]`,
@@ -92,6 +95,7 @@ let validateDriveModule = ()=> {
           })
         }
         if(!write.name){
+          // @ts-ignore
           error.write.push({
             // @ts-ignore
             position:`[(${i})] of your array in write[]`,
