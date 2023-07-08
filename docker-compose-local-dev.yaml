@@ -3,7 +3,7 @@ version: '3.9'
 services:
   storage:
     container_name: swyger-storage
-    image: swyger/nodejs-storage:0.1.0
+    image: coorise/swyger-nodejs-storage:0.1.0
     build: #In case you did not publish on docker hub
       context: ./
       dockerfile: Dockerfile-dev

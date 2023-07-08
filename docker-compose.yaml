@@ -3,7 +3,7 @@ version: '3.9'
 services:
   storage:
     container_name: swyger-storage
-    image: swyger/nodejs-storage:0.1.0
+    image: coorise/swyger-nodejs-storage:0.1.0
     env_file: .env
     depends_on:
       - mongodb
