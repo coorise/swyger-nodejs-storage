@@ -6,7 +6,7 @@ Visit the master branch: https://github.com/coorise/swyger-nodejs-storage.git
 Note: You must know how to use NodeJS: https://nodejs.org/en/docs/guides/getting-started-guide
 
 **Swyger Storage v0.1** is a good api Server for:
-- CRUD: Create/Read/Update/Delete data
+- CRUD: Create/Read/Update/Delete file
 - Realtime Event: on value/create/delete/update
 
 
