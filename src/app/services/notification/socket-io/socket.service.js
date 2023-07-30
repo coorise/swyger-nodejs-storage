@@ -5,6 +5,7 @@ const rootApi = process.env.API_PATH ||'/api/v1';
 
 // for more info: https://github.com/ping58972/node-rest-api-basic-socket-io
 let io;
+
 const init= (httpServer,appModule) => {
   // eslint-disable-next-line global-require
   io = new Server(httpServer, {
